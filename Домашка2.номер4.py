@@ -6,5 +6,4 @@ def sk(i):
     elif opens < closes:
         return 'нет ', closes - opens,'открытой скобки'
     return 'скобок нет'
-
 print(sk(input('Example: ')))
