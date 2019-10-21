@@ -1,10 +1,7 @@
-from random import random
-a = [0] * 10
-for i in range(10):
-    a[i] = int(random() * 100)
-print(a)
+from random import randint
+a = [randint(3, 33) for x in range(10)]
 
-j = 9
+j = len(a) - 1
 while j > 0:
     m = 0
     for i in range(1, j + 1):
