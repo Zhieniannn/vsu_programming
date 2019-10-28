@@ -1,13 +1,15 @@
 import collections
 names = {
     "Arsenii": ["Danil", "Jecka"],
-    "Danil": ["Denchick", "Albert"],
+    "Danil": ["Denchick1", "Albert"],
     "Jecka": ["Dima", "David"]
-    }
+}
+
+
 def notahuman(a):
-    if not len(a) % 2 and a[0] == "D":
-        return True
-    return False
+    return not len(a) % 2 and a[0] == "D"
+
+
 c = []
 b = collections.deque(names["Arsenii"])
 while names:
@@ -17,5 +19,5 @@ while names:
             print(d)
             break
         else:
-            b += names[d]
+            b += names.get(d, [])
         c.append(d)
