@@ -18,6 +18,5 @@ while names:
         if notahuman(d):
             print(d)
             break
-        else:
             b += names.get(d, [])
         c.append(d)
